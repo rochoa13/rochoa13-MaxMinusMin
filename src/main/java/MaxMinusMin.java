@@ -1,5 +1,5 @@
-
-import java.util.List;
+//new commit
+import java.util.*;
 
 public class MaxMinusMin {
     /**
@@ -10,6 +10,10 @@ public class MaxMinusMin {
      * @return the max value of nums minus the min value of nums.
      */
     public int difference(List<Integer> nums){
-        return 0;
+        int numsMax = Collections.max(nums);
+        int numsMin = Collections.min(nums);
+        int numsDiff = numsMax - numsMin;
+
+        return numsDiff;
     }
 }
